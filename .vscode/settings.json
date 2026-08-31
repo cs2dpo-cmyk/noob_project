@@ -1,0 +1,59 @@
+{
+  //字體設定  
+  "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "bold",
+  "editor.fontSize": 18,
+  "editor.inlayHints.fontFamily": "'JetBrains Mono NL', '中文', monospace",
+  "debug.onTaskErrors": "debugAnyway",
+  "cmake.options.statusBarVisibility": "icon",
+  "todohighlight.isEnable": true,
+  //todo設定
+  "todohighlight.include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.html",  
+    "**/*.php",
+    "**/*.css",
+    "**/*.scss",
+    "**/*.cpp",
+    "**/*.h"
+  ],
+
+  // 下面開始是註解顏色的自訂
+  "editor.tokenColorCustomizations": {
+    // 簡單設定：改變所有語言註解顏色
+    "comments": "#FF8C00",
+
+    // 更精細設定，用 TextMate scope 針對單行或區塊註解
+    "textMateRules": [
+      {
+        "scope": "comment.line.double-slash",
+        "settings": {
+          "foreground": "#FF8C00",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "comment.block",
+        "settings": {
+          "foreground": "#32CD32"
+        } 
+      }
+    ]
+  },
+
+  // 若你的語言/主題使用 semantic coloring，建議關閉 semantic highlighting 讓上面的規則生效：
+"editor.semanticHighlighting.enabled": false,
+"files.associations": {
+    "iostream": "cpp"
+},
+//VScode外觀設定
+"material-icon-theme.hidesExplorerArrows": true, 
+"workbench.sideBar.location": "right",
+"workbench.tree.enableStickyScroll": false,
+"workbench.tree.renderIndentGuides": "none",
+"files.autoSave": "afterDelay",
+}
