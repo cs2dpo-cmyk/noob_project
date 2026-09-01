@@ -1,0 +1,15 @@
+#忽略所有編譯出來的執行檔和中間檔
+*.exe
+*.out
+*.o
+*.obj
+
+#忽略 vscode 個人環境設定資料夾
+.vscode/
+
+#忽略存放密碼與 KEY 的環境變數檔
+.env
+
+#忽略作業系統產生的垃圾檔
+.DS_Store
+Thumbs.db

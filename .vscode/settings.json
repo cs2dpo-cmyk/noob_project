@@ -56,4 +56,7 @@
 "workbench.tree.enableStickyScroll": false,
 "workbench.tree.renderIndentGuides": "none",
 "files.autoSave": "afterDelay",
+"terminal.integrated.env.windows": {
+    "LC_ALL": "zh_TW.UTF-8"
+}
 }
