@@ -1,9 +1,10 @@
 #include <iostream>
 #include <vector>
+#include <windows.h> // 支援 Windows 終端機 API
 
 using namespace std;
 
-// 1. 演算法：判斷是否為質數
+// 1. 演算法：判斷是否為質數 (必須放在 main 前面)
 bool isPrime(int n) {
     if (n <= 1) return false;
     for (int i = 2; i * i <= n; i++) {
@@ -12,7 +13,7 @@ bool isPrime(int n) {
     return true;
 }
 
-// 2. 演算法：計算第 n 個費氏數列數字 (遞迴/動態規劃)
+// 2. 演算法：計算第 n 個費氏數列數字 (必須放在 main 前面)
 long long fibonacci(int n) {
     if (n <= 0) return 0;
     if (n == 1) return 1;
@@ -27,6 +28,10 @@ long long fibonacci(int n) {
 }
 
 int main() {
+    // 強制設定 Terminal 輸入/輸出頁碼為 UTF-8
+    SetConsoleOutputCP(65001);
+    SetConsoleCP(65001);
+
     cout << "請輸入數字: ";
     int a;
     cin >> a;
